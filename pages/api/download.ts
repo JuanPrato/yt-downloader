@@ -21,3 +21,9 @@ export default async function handler(
   res.status(200).setHeader('Content-Type', 'audio/mpeg').send(audio);
 
 }
+
+export const config = {
+  api: {
+    responseLimit: '16mb'
+  }
+}
